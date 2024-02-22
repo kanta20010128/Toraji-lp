@@ -1,4 +1,8 @@
 /*共通*/
+html {
+    margin: 0;
+}
+
 body {
     font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
     color: white;
