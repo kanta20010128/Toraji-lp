@@ -3,32 +3,7 @@ body {
     font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
     color: white;
     background-color: #151515;
-}
-
-.logo {
-    width: 125px;
-}
-
-h1 {
-    font-family: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "MS PMincho", serif;
-    font-size: 35px;
-    position: relative;
-    margin-left: 20px;
-}
-
-h1::after {
-    width: 100px;
-    height: 2px;
-    display: inline-block;
-    content: "";
-    background-color: #821B1E;
-    position: absolute;
-    top: 48%;
-    margin-left: 10px;
-}
-
-p {
-    font-size: 18px;
+    margin: 0;
 }
 
 
@@ -39,6 +14,32 @@ p {
         max-width: 1180px;
         min-width: 900px;
         margin: 10px auto 0 auto;
+    }
+
+    .logo {
+        width: 125px;
+    }
+
+    h1 {
+        font-family: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "MS PMincho", serif;
+        font-size: 35px;
+        position: relative;
+        margin: 0px auto 0px 20px;
+    }
+
+    h1::after {
+        width: 100px;
+        height: 2px;
+        display: inline-block;
+        content: "";
+        background-color: #821B1E;
+        position: absolute;
+        top: 48%;
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 18px;
     }
 
 
@@ -373,8 +374,40 @@ p {
         min-width: 375px;
     }
 
+    section {
+        margin: 0 10px 80px 10px;
+    }
+
     article {
         position: relative;
+        margin: 0;
+        width: 100%;
+    }
+
+    .logo {
+        width: 85px;
+    }
+
+    h1 {
+        font-family: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "MS PMincho", serif;
+        font-size: 25px;
+        position: relative;
+        margin: 0px auto 0px 10px;
+    }
+
+    h1::after {
+        width: 85px;
+        height: 2px;
+        display: inline-block;
+        content: "";
+        background-color: #821B1E;
+        position: absolute;
+        top: 48%;
+        margin-left: 10px;
+    }
+
+    p {
+        font-size: 13px;
         margin: 0;
     }
 
@@ -385,7 +418,7 @@ p {
     }
 
     .phoneTop {
-        margin: 30px 20px;
+        padding: 20px 10px;
         width: 95%;
         position: absolute;
         top: 0;
@@ -393,8 +426,10 @@ p {
     }
 
     .hamMenu {
-        width: 48px;
-        float: right;
+        width: 35px;
+        position: absolute;
+        top: 20px;
+        right: 10px;
     }
 
     #navPhone {
@@ -410,21 +445,21 @@ p {
     }
 
     .navCloseBtn {
-        width: 48px;
+        width: 35px;
         position: absolute;
         top: 20px;
-        right: 30px;
+        right: 10px;
     }
 
     .navLogo {
-        width: 250px;
+        width: 125px;
         position: absolute;
-        top: 100px;
-        left: 28px;
+        top: 50px;
+        left: 25px;
     }
 
     .navMenu {
-        margin-top: 300px;
+        margin-top: 150px;
         animation-name:fadeInAnime;
         animation-duration:2s;
         animation-fill-mode:forwards;
@@ -445,16 +480,15 @@ p {
         text-decoration: none;
         color: inherit;
         font-weight: bold;
-        font-size: 40px;
-        margin-bottom: 35px;
+        font-size: 20px;
+        margin-bottom: 15px;
         text-align: center;
     }
 
     /*カルーセル*/
     .carousel {
-        margin: 0 auto 100px auto;
+        margin: 0 auto 50px auto;
         width: 100%;
-        opacity: 0.8;
     }
 
     .carouselImg {
@@ -463,49 +497,49 @@ p {
     
 
     /*トラジについて*/
-    .section1 {
-        margin-bottom: 100px;
-    }
     .section1-flex {
         display: block;
-        margin: 30px auto 80px auto;
-    }
-    
-    .section1Img {
-        text-align: center;
+        margin-top: 30px;
     }
 
     .section1Img > img{
-        width: 90%;
+        width: 100%;
     }
     
     .section1Text {
         display: block;
-        margin: 30px 20px;
+        margin: 20px auto;
     }
 
-    .section1Text > p {
-        margin: 30px 50px;
-    }
-    
     .section1H {
         font-family: "Hiragino Mincho ProN", "YuMincho", "Yu Mincho", "MS PMincho", serif;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
+        margin-bottom: 0;
     }
 
     .section1P {
+        margin: 10px auto;
         text-align: center;
     }
 
     span {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .span1 {
         display: block;
-        margin: 30px auto 20px auto;
+        margin: 20px auto 15px auto;
+    }
+
+    .spanLast {
+        display: block;
+        margin-bottom: 80px;
+    }
+
+    .section1Text > p {
+        margin: 10px auto;
     }
     
 
@@ -514,13 +548,12 @@ p {
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-        margin-bottom: 100px;
         position: relative;
     }
     
     .section2Text {
         order: 1;
-        margin: 30px auto auto 100px;
+        margin: 0px auto auto 40px;
         position: absolute;
         top: 0;
         left: 0;
@@ -528,12 +561,12 @@ p {
     }
     
     .section2Text > div > h2 {
-        font-size: 4.0vw;
+        font-size: 3.5vw;
         margin-bottom: 0px;
     }
     
     .section2Text > div > p {
-        font-size: 3.0vw;
+        font-size: 2.5vw;
         margin: 5px auto 40px 20px;
     }
 
@@ -546,7 +579,7 @@ p {
     }
 
     .section2Img2 > img {
-        width: 90%;
+        width: 100%;
         opacity: 0.3;
     }
 
@@ -554,23 +587,24 @@ p {
     /*スタッフの声*/
     .section3-flex {
         display: block;
-        margin: 30px auto 100px auto;
+        margin-top: 30px;
     }
 
     .section3Left > div {
-        margin: auto 30px 150px 30px;
+        margin-bottom: 30px;
         position: relative;
-        height: 550px;
+        height: 420px;
     }
 
     .section3Right > div {
-        margin: auto 30px 150px 30px;
+        margin-bottom: 30px;
         position: relative;
-        height: 550px;
+        height: 420px;
     }
 
     h3 {
         font-weight: normal;
+        font-size: 15px;
         margin: 0px;
     }
 
@@ -578,16 +612,13 @@ p {
         background-color: #1c1c1c;
         position: absolute;
         left: 0px;
-        top: 430px;
-        padding: 30px;
+        top: 270px;
+        padding: 20px;
     }
 
     .section3Text > h2 {
-        margin: 10px 0px;
-    }
-
-    .section3Text > p {
-        font-size: 15px;
+        font-size: 17px;
+        margin: 5px 0;
     }
 
     .section3Img {
@@ -600,20 +631,20 @@ p {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        row-gap: 30px;
-        column-gap: 30px;
-        margin: 30px 30px 100px 30px;
+        row-gap: 20px;
+        column-gap: 20px;
+        margin-top: 30px;
     }
 
     .section4Img {
-        width: 200px;
+        width: 167px;
     }
 
 
     /*店舗概要*/
     .section5Table {
-        width: 90%;
-        margin: 30px 30px auto 30px;
+        width: 100%;
+        margin-top: 30px;
     }
 
     .section5Th-first {
@@ -625,7 +656,7 @@ p {
         border-top-color: #821B1E;
         border-top-width: 1px;
         border-top-style: solid;
-        width: 100px;
+        width: 64px;
     }
 
     .section5Th {
@@ -634,12 +665,12 @@ p {
         border-bottom-color: #821B1E;
         border-bottom-width: 1px;
         border-bottom-style: solid;
-        width: 100px;
+        width: 64px;
     }
 
     .section5Td-first {
         text-align: left;
-        padding: 30px;
+        padding: 20px;
         border-bottom-color: #1c1c1c;
         border-bottom-width: 1px;
         border-bottom-style: solid;
@@ -650,14 +681,14 @@ p {
 
     .section5Td {
         text-align: left;
-        padding: 30px;
+        padding: 20px;
         border-bottom-color: #1c1c1c;
         border-bottom-width: 1px;
         border-bottom-style: solid;
     }
 
     .section5Map {
-        margin: 40px auto 100px auto;
+        margin-top: 40px;
         width: 100%;
         height: 240px;
     }
@@ -665,11 +696,11 @@ p {
 
     /*お問い合わせフォーム*/
     .section6Form {
-        margin: 30px 30px 100px 30px;
+        margin-top: 30px;
     }
 
     .section6-flex {
-        margin-bottom: 35px;
+        margin-bottom: 20px;
     }
 
     .section6Header {
@@ -683,7 +714,7 @@ p {
     .section6Text {
         font-size: 17px;
         color: white;
-        height: 60px;
+        height: 55px;
         width: 100%;
         min-width: 300px;
         background-color: #1c1c1c;
@@ -693,19 +724,23 @@ p {
     }
 
     .section6Submit {
-        height: 70px;
+        height: 60px;
     }
 
 
     /*フッター*/
     footer {
         background-color: black;
-        padding: 30px 30px 50px 30px;
+        padding: 30px 10px 50px 10px;
     }
 
     .footerLogo {
-        width: 125px;
-        margin-bottom: 30px;
+        width: 85px;
+        margin: 0 auto 30px auto;
+    }
+
+    .footerLogo > img {
+        width: 100%;
     }
 
     .footerMenu {
@@ -725,7 +760,7 @@ p {
 
     .footerCopy > p {
         text-align: left;
-        font-size: 13px;
+        font-size: 10px;
     }
 
 
@@ -760,12 +795,10 @@ p {
         margin: auto;
     }
     
-    .closeBtn {
+    .closeBtnImg {
+        width: 35px;
         position: absolute;
-        top: 10px;
-        right: 20px;
-        color: white;
-        font-size: 40px;
-        text-decoration: none;
+        top: 20px;
+        right: 10px;
     }
 }
