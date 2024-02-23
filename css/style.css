@@ -457,10 +457,10 @@ body {
 
     .navMenu {
         margin-top: 150px;
-        animation-name:fadeInAnime;
-        animation-duration:2s;
-        animation-fill-mode:forwards;
-        opacity:0;
+        animation-name: fadeInAnime;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        opacity: 0;
     }
     @keyframes fadeInAnime{
         from {
